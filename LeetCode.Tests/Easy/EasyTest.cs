@@ -37,7 +37,7 @@ namespace LeetCode.Tests.Easy
         {
 
             // Act
-            var validParamathers = _validParenthsClass.IsValid(s);
+            var validParamathers = _validParenthsClass.IsValid2(s);
 
             // Assert
             return validParamathers;
