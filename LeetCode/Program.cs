@@ -22,6 +22,7 @@ using LeetCode.Medium.LongestPalindromeSubString;
 using LeetCode.Medium.ReversInteger;
 using LeetCode.Medium;
 using LeetCode.Medium.RemoveNthFromEnd;
+using LeetCode.Medium._4Sum;
 
 //var palindrome = new PalindromeFacade();
 
@@ -126,11 +127,18 @@ using LeetCode.Medium.RemoveNthFromEnd;
 
 //var listNode1 = new ListNode(1, new ListNode(2,new ListNode(3, new ListNode(4, new ListNode(5)))));
 //var listNode1 = new ListNode(1, new ListNode(2));
-var listNode1 = new ListNode(1, new ListNode(2, new ListNode(3)));
+//var listNode1 = new ListNode(1, new ListNode(2, new ListNode(3)));
 
-var Nnode = new RemoveNthFromEndClass();
+//var Nnode = new RemoveNthFromEndClass();
 
-var result = Nnode.RemoveNthFromEnd(listNode1, 3);
+//var result = Nnode.RemoveNthFromEnd(listNode1, 3);
+
+var foursum = new _4Sum();
+
+var result = foursum.FourSum(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
+
+//var result = foursum.FourSum(new int[] { 2, 2, 2, 2, 2 }, 8);
+
 var lastResult = result;
 
 
