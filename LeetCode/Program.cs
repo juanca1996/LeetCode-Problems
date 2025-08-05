@@ -23,6 +23,8 @@ using LeetCode.Medium.ReversInteger;
 using LeetCode.Medium;
 using LeetCode.Medium.RemoveNthFromEnd;
 using LeetCode.Medium._4Sum;
+using LeetCode.Medium.GenerateParenthesis;
+using LeetCode.Easy.MergeTwoSortedLists;
 
 //var palindrome = new PalindromeFacade();
 
@@ -133,11 +135,29 @@ using LeetCode.Medium._4Sum;
 
 //var result = Nnode.RemoveNthFromEnd(listNode1, 3);
 
-var foursum = new _4Sum();
+//var foursum = new _4Sum();
 
-var result = foursum.FourSum(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
+//var result = foursum.FourSum(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
 
 //var result = foursum.FourSum(new int[] { 2, 2, 2, 2, 2 }, 8);
+
+//var lis1 = new ListNode(1, new ListNode(2,new ListNode(4)));
+//var lis2 = new ListNode(1,new ListNode(3,new ListNode(4)));
+
+//var lis1 = new ListNode(-9, new ListNode(3));
+//var lis2 = new ListNode(5, new ListNode(7));
+
+//var lis1 = new ListNode(1);
+//var lis2 = new ListNode(2);
+
+var lis2 = new ListNode(0);
+
+//var lis1 = new ListNode(1, new ListNode(6,new ListNode(8)));
+//var lis2 = new ListNode(2,new ListNode(3));
+
+var mergeTwoList = new MergedTwoSortedList();
+
+var result = mergeTwoList.MergeTwolist(null,lis2);
 
 var lastResult = result;
 
