@@ -6,43 +6,44 @@ namespace LeetCode.Easy.MergeTwoSortedLists
     {
         public ListNode MergeTwolist(ListNode List1, ListNode list2)
         {
-            return JoinList(List1 , list2, new ListNode());
+            if(List1 != null && list2 != null)
+            {
+                return JoinList(List1, list2, new ListNode());
+
+            }else if (List1 == null && list2 != null)
+            {
+                return list2;
+            }
+            else
+            {
+                return List1;
+            }
         }
 
         public ListNode JoinList(ListNode lis1, ListNode lis2, ListNode newList)
         {
             if(lis1 == null || lis2 == null)
             {
-                return null;
-                
+                if (lis1 == null && lis2 != null)
+                {
+                    return lis2;
+                }
+                else
+                {
+                    return lis1;
+                }
             }
 
             if (lis1.val <= lis2.val) {
+
                 newList = new ListNode(lis1.val);
-                if(lis1.next == null)
-                {
-                    newList.next = lis2;
-                    newList.next = JoinList(lis1, lis2.next, newList);
-                }
-                else
-                {
-                    newList.next = lis1;
-                    newList.next = JoinList(lis1.next, lis2, newList);
-                }
+                newList.next = JoinList(lis1.next, lis2, newList.next);
             }
             else
             {
+
                 newList = new ListNode(lis2.val);
-                if(lis2.next == null)
-                {
-                    newList.next = lis1;
-                    newList.next = JoinList(lis1.next, lis2, newList);
-                }
-                else
-                {
-                    newList.next = lis2;
-                    newList.next = JoinList(lis1, lis2.next, newList);
-                }
+                newList.next = JoinList(lis1,lis2.next, newList.next);
             }
 
             return newList;

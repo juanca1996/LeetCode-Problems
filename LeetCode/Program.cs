@@ -141,15 +141,23 @@ using LeetCode.Easy.MergeTwoSortedLists;
 
 //var result = foursum.FourSum(new int[] { 2, 2, 2, 2, 2 }, 8);
 
-var lis1 = new ListNode(1, new ListNode(2,new ListNode(4)));
-var lis2 = new ListNode(1,new ListNode(3,new ListNode(4)));
+//var lis1 = new ListNode(1, new ListNode(2,new ListNode(4)));
+//var lis2 = new ListNode(1,new ListNode(3,new ListNode(4)));
+
+//var lis1 = new ListNode(-9, new ListNode(3));
+//var lis2 = new ListNode(5, new ListNode(7));
 
 //var lis1 = new ListNode(1);
 //var lis2 = new ListNode(2);
 
+var lis2 = new ListNode(0);
+
+//var lis1 = new ListNode(1, new ListNode(6,new ListNode(8)));
+//var lis2 = new ListNode(2,new ListNode(3));
+
 var mergeTwoList = new MergedTwoSortedList();
 
-var result = mergeTwoList.MergeTwolist(lis1,lis2);
+var result = mergeTwoList.MergeTwolist(null,lis2);
 
 var lastResult = result;
 
