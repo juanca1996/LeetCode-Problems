@@ -1,30 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using LeetCode.AddBinary;
+using LeetCode.Binary_Tree_Inorder_Traversal;
+using LeetCode.ClambingTheStairs;
 using LeetCode.CommonLongestWord;
-//using LeetCode.Palindrome;
-using LeetCode.Roman_to_Integer;
+using LeetCode.ConcurrencyProblems.PrintInOrden;
+using LeetCode.ConvertSortedArrayInBinaryTree;
 //using LeetCode.MergeTwoSortedList;
 using LeetCode.DeleteDuplicateList;
-using LeetCode.SearchInsertPosition;
+using LeetCode.Easy.MergeTwoSortedLists;
 using LeetCode.LenghtOfTheLastWord;
-using LeetCode.AddBinary;
-using LeetCode.sqlrtx;
-using LeetCode.ClambingTheStairs;
-using LeetCode.Binary_Tree_Inorder_Traversal;
-using LeetCode.SymetricTree;
-using System.Net.Http.Headers;
-using LeetCode.NodeTreeMaxDepth;
-using LeetCode.ConvertSortedArrayInBinaryTree;
-using LeetCode.ConcurrencyProblems.PrintInOrden;
+using LeetCode.Medium;
+using LeetCode.Medium._4Sum;
 using LeetCode.Medium.AddTwoMergeNode;
+using LeetCode.Medium.GenerateParenthesis;
+using LeetCode.Medium.LongestPalindromeSubString;
 //using LeetCode.MergeTwoSortedList;
 using LeetCode.Medium.LongestSubstringWithNoRepetingChara;
-using LeetCode.Medium.LongestPalindromeSubString;
-using LeetCode.Medium.ReversInteger;
-using LeetCode.Medium;
 using LeetCode.Medium.RemoveNthFromEnd;
-using LeetCode.Medium._4Sum;
-using LeetCode.Medium.GenerateParenthesis;
-using LeetCode.Easy.MergeTwoSortedLists;
+using LeetCode.Medium.ReversInteger;
+using LeetCode.Medium.SwapNodePairs;
+using LeetCode.NodeTreeMaxDepth;
+//using LeetCode.Palindrome;
+using LeetCode.Roman_to_Integer;
+using LeetCode.SearchInsertPosition;
+using LeetCode.sqlrtx;
+using LeetCode.SymetricTree;
+using System.Collections.Generic;
+using System.Net.Http.Headers;
 
 //var palindrome = new PalindromeFacade();
 
@@ -150,14 +152,18 @@ using LeetCode.Easy.MergeTwoSortedLists;
 //var lis1 = new ListNode(1);
 //var lis2 = new ListNode(2);
 
-var lis2 = new ListNode(0);
+//var lis2 = new ListNode(0);
 
 //var lis1 = new ListNode(1, new ListNode(6,new ListNode(8)));
 //var lis2 = new ListNode(2,new ListNode(3));
 
-var mergeTwoList = new MergedTwoSortedList();
+//var lis2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+//var lis2 = new ListNode(1,new ListNode(2,new ListNode(3)));
+var lis2 = new ListNode(1);
 
-var result = mergeTwoList.MergeTwolist(null,lis2);
+var swapedNode = new SwapNodeExercise();
+
+var result = swapedNode.SwapPairs(lis2);
 
 var lastResult = result;
 
