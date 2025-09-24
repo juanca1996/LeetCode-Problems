@@ -4,6 +4,7 @@ using LeetCode.Medium.ContainerWithMostWater;
 using LeetCode.Medium.IntegerToRoman;
 using LeetCode.Medium._3Sum;
 using LeetCode.Medium.LetterCombinationPhoneNumber;
+using LeetCode.Medium._3SumCloset;
 
 namespace LeetCode.Tests.Medium
 {
@@ -14,6 +15,7 @@ namespace LeetCode.Tests.Medium
         private IntegerToRoman _integerToRoman;
         private ThreeSumClass _threeSum;
         private LetterConbinationPhoneNumber _letterConbinationPhoneNumber;
+        private threeSumClosetSolution _threeSumClosetSolution;
 
 
         [SetUp]
@@ -24,6 +26,7 @@ namespace LeetCode.Tests.Medium
             _integerToRoman = new IntegerToRoman();
             _threeSum = new ThreeSumClass();
             _letterConbinationPhoneNumber = new LetterConbinationPhoneNumber();
+            _threeSumClosetSolution = new threeSumClosetSolution();
         }
 
         [Test]
@@ -65,6 +68,17 @@ namespace LeetCode.Tests.Medium
         public string CheckIntegerToRoman(int num)
         {
             return _integerToRoman.IntToRoman(num);
+        }
+
+        [Test]
+        [TestCase(new[] { -1, 2, 1, -4 }, 1, ExpectedResult = 2)]
+        [TestCase(new[] { 0, 0, 0 }, 0, ExpectedResult = 0)]
+        [TestCase(new[] { 4, 0, 5, -5, 3, 3, 0, -4, -5 }, -2, ExpectedResult = -2)]
+        [TestCase(new[] { 0, 3, 97, 102, 200 },300, ExpectedResult = 300)]
+        [TestCase(new[] { -84, 92, 26, 19, -7, 9, 42, -51, 8, 30, -100, -13, -38 },78, ExpectedResult =77)]
+        public int Check3SumClosest(int[] nums, int target)
+        {
+            return _threeSumClosetSolution.ThreeSumClosestImproved(nums,target);
         }
 
         [Test]
