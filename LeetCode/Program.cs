@@ -27,6 +27,7 @@ using LeetCode.sqlrtx;
 using LeetCode.SymetricTree;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
+using LeetCode.Hard.MergekSortedLists;
 
 //var palindrome = new PalindromeFacade();
 
@@ -159,11 +160,17 @@ using System.Net.Http.Headers;
 
 //var lis2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
 //var lis2 = new ListNode(1,new ListNode(2,new ListNode(3)));
-var lis2 = new ListNode(1);
 
-var swapedNode = new SwapNodeExercise();
 
-var result = swapedNode.SwapPairs(lis2);
+LeetCode.Hard.MergekSortedLists.ListNode FirstListNode = new LeetCode.Hard.MergekSortedLists.ListNode(1, new LeetCode.Hard.MergekSortedLists.ListNode(4, new LeetCode.Hard.MergekSortedLists.ListNode(5)));
+LeetCode.Hard.MergekSortedLists.ListNode SecondListNode = new LeetCode.Hard.MergekSortedLists.ListNode(1, new LeetCode.Hard.MergekSortedLists.ListNode(3, new LeetCode.Hard.MergekSortedLists.ListNode(4)));
+LeetCode.Hard.MergekSortedLists.ListNode ThirdListNode = new LeetCode.Hard.MergekSortedLists.ListNode(2, new LeetCode.Hard.MergekSortedLists.ListNode(6));
+LeetCode.Hard.MergekSortedLists.ListNode[] listNodes = new LeetCode.Hard.MergekSortedLists.ListNode[] { FirstListNode, SecondListNode, ThirdListNode };
+
+
+MergekSortedLists solution = new MergekSortedLists();
+
+var result = solution.MergeKLists(listNodes);
 
 var lastResult = result;
 
